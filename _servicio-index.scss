@@ -1,0 +1,39 @@
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.card {
+    background-color: $bgWhite;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(160, 157, 157);
+    width: 15rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 0.5rem;
+
+    &__header img{
+        width: 5rem;
+        height: 5rem;
+    }
+    
+}
+
+a.card__link {
+    text-decoration: underline;
+    text-transform: lowercase;
+    background-color: $bgSecundario;
+    margin: 0.1rem 0.3rem;
+    padding: 0.1rem 0.3rem 0.3rem 0.3rem;
+    color: $fuenteBlue;
+    transition: font-size 0.3s;
+
+
+
+&:hover {
+    font-size: larger;
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+    &__copyright {
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+    }
+}
+
+p.footer__copyright {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.contenedor__navbar {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+ul.contenedor__navbar--footer {
+    list-style-type: none;
+    padding-left: 0.5rem;
+}

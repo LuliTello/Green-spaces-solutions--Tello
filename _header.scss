@@ -1,0 +1,53 @@
+.header__logo {
+    width: 25rem;
+    height: 5rem;
+
+}
+
+/*transition*/
+a.nav-link {
+    transition: all;
+    padding: 1rem;
+
+
+    &:hover {
+        transform: scale(1.2);
+        color: $fuenteBlue;
+        text-decoration: underline;
+        text-decoration-color: #1D8348;
+    }
+}
+
+/*h1 inicio*/
+.imagen__inicio {
+    background-image: url(../assets/img-inicio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 30rem;
+    margin: 0 1rem 2rem 0;
+    padding: 2rem;
+
+
+    & h1 {
+        position: relative;
+        display: inline-block;
+        color: $fuenteLight;
+        top: 25rem;
+        left: 14rem;
+        animation: h1Moves 2s alternate;
+    }
+}
+
+/*animaciones*/
+@keyframes h1Moves {
+    0% {
+        left: -10rem;
+    }
+
+    100% {
+        left: 14rem;
+    }
+}
+

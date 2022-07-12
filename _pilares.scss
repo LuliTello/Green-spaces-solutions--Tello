@@ -1,0 +1,35 @@
+.pilares {
+    margin-top: 2rem;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & p {
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 0 1rem;
+            padding: 1rem;
+        }
+        &--img1,
+        &--img2 {
+            width: 30rem;
+            height: 20rem;
+            margin: 1rem 3rem;
+            border-radius: 0.5rem;
+        }
+        
+    }
+
+}
+
+.pilares__content--div {
+    order: 2;
+}
+
+.pilares__content--description2 {
+    order: 1;
+}
+
+
