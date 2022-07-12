@@ -1,0 +1,22 @@
+{
+  "name": "gss-tello-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass index.scss style.css -w "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuliTello/Green-spaces-solutions-bootstrap-Tello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuliTello/Green-spaces-solutions-bootstrap-Tello/issues"
+  },
+  "homepage": "https://github.com/LuliTello/Green-spaces-solutions-bootstrap-Tello#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
