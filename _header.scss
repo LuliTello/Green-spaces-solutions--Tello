@@ -6,7 +6,7 @@
 
 /*transition*/
 a.nav-link {
-    transition: all;
+    transition: all 0.3s;
     padding: 1rem;
 
 
@@ -49,5 +49,72 @@ a.nav-link {
     100% {
         left: 14rem;
     }
+}
+@media(max-width: 768px) {
+
+    .imagen__inicio h1 {
+        position: relative;
+        top: 10rem;
+        left: 2rem;
+    }
+
+    /*animaciones*/
+    @keyframes h1Moves {
+        0% {
+            left: -20rem;
+        }
+
+        100% {
+            left: 2rem;
+        }
+    }
+
+    hr {
+        width: 25rem;
+        margin: 2rem auto;
+    }
+}
+@media(max-width:480px){
+    .header__logo {
+        width: 100%;
+    }    
+    
+    .navbar {
+        flex-wrap: wrap;
+    } 
+
+    /*.contenedor__navbar--list {
+        display: none;
+    }*/
+
+    hr {
+        width: 10rem;
+        margin: 2rem 3rem 0.5rem 8rem;
+    }
+    .imagen__inicio {
+        height: 20rem;
+        margin: $espaciadoPrimario;
+    }
+
+    h1.titulo__inicio {
+        font-size: 1.5rem;
+        font-weight: $grosorFuente;
+        text-align: center;
+        margin-right: 2rem;
+        top: 7rem;
+        animation: h1Moves 1s alternate;
+    }
+
+    /*animaciones*/
+    @keyframes h1Moves {
+        0% {
+            top: -15rem;
+        }
+
+        100% {
+            top: 7rem;
+        }
+    }
+
 }
 

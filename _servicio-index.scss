@@ -37,3 +37,25 @@ a.card__link {
     font-size: larger;
     }
 }
+@media(max-width: 768px){
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+}
+@media(max-width:480px){
+    .services__grid {
+        grid-template-columns: 1fr;
+        margin: 1rem auto;
+    }
+
+    .card {
+        height: 25rem;
+
+        &__header img {
+            margin: 1rem auto;
+        }
+    }
+
+}

@@ -9,3 +9,25 @@ h2.galery__index{
     border-radius: 0.5rem;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
+@media(max-width: 768px){
+    h2.galery__index{
+        margin: 1rem;
+        font-size: 22px;
+    }
+
+    .img__content {
+        height: 20rem;
+    }
+
+}
+@media(max-width:480px){
+    .img__galery {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    h2.galery__index{
+        text-align: center;
+    }
+
+}
