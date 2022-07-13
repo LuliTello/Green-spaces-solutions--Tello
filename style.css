@@ -58,6 +58,10 @@ a.nav-link {
     text-decoration: underline;
     text-decoration-color: #1D8348; }
 
+.nav-item:first-of-type {
+  border: 1px dotted #000;
+  border-radius: 0.5rem; }
+
 /*h1 inicio*/
 .imagen__inicio {
   background-image: url(../assets/img-inicio1.jpg);
@@ -409,6 +413,14 @@ p.footer__copyright {
       color: #140d3b;
       text-decoration: underline;
       text-decoration-color: #1D8348; }
+
+a.link--facebook, .link--instagram, .link--linkedin {
+  /*no me toma las transiciones de los iconos*/
+  transition: all 0.5s; }
+  a.link--facebook:hover, .link--instagram:hover, .link--linkedin:hover {
+    transform: scale(1.2);
+    /*no me toma el scale*/
+    color: #a71777; }
 
 @media (max-width: 768px) {
   .footer {

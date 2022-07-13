@@ -16,6 +16,11 @@ a.nav-link {
         text-decoration: underline;
         text-decoration-color: #1D8348;
     }
+    
+}
+.nav-item:first-of-type{
+    border: 1px dotted $fuenteDark;
+    border-radius: 0.5rem;
 }
 
 /*h1 inicio*/
