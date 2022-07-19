@@ -1,0 +1,22 @@
+.footer--pages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer__copyright--pages {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+@media(max-width:480px) {
+    
+    .footer__copyright--pages {
+        margin: 0.5rem auto $espaciadoPrimario;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .footer__icons{
+        padding-top: 0.5rem;
+    }
+}
+   

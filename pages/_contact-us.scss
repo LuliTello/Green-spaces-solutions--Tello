@@ -1,0 +1,166 @@
+.titulo__contacto--img {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+h1.titulo__contacto {
+    color: #f8f8ff;
+    font-size: 32px;
+    font-style: italic;
+    position: absolute;
+    top: 32rem;
+    left: 40rem;
+    animation: h1MdMoveC 2s alternate;
+}
+
+/*animacion*/
+@keyframes h1MdMoveC {
+    0% {
+        top: 1rem;
+    }
+
+    100% {
+        top: 32rem;
+    }
+}
+.contacto__h2 {
+    color: $fuenteBlue;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.form {
+    background-color: $bgSecundario;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    &__content{ 
+        margin: $espaciadoSecundario;
+        padding: 1rem;}
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 0.3rem;
+    margin: 0.5rem 1rem 1rem 0.5rem;
+    display: block;
+}
+
+textarea {
+    margin-left: 7rem;
+}
+
+.form__nombre,
+.form__email,.nombre,.email {
+    display: inline;
+}
+
+.form__textarea--block {
+    display: block;
+}
+
+label {
+    margin: 1rem;
+}
+
+.form__telefono {
+    display: flex;
+}
+
+.contact__contacto {
+    margin: 3rem 1rem 0 3rem;
+    padding-left: 3rem;
+
+    &--title{
+        font-size: 1.5rem;
+        color: $fuenteBlue;
+        text-decoration: underline;    
+    }
+   
+}
+.contacto__lista--icono{
+    margin: $espaciadoSecundario;
+    padding-bottom: 1rem;
+}
+@media(max-width: 768px){
+    .titulo__contacto--img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1.titulo__contacto {
+        font-size: 36px;
+        top: 20rem;
+        left: 17rem;
+        animation: h1MdMoveC 2s alternate;
+    }
+
+    /*animacion*/
+    @keyframes h1MdMoveC {
+        0% {
+            top: 5rem;
+        }
+
+        100% {
+            top: 20rem;
+        }
+    }
+
+    label,
+    input {
+        display: inline-block;
+    }
+
+    .form__telefono,.email {
+        display: block;
+    }
+
+    .textarea {
+        margin-left: 3rem;
+    }  
+}
+@media(max-width:480px){
+    .titulo__contacto--img{
+        height: 15rem;
+    }
+    h1.titulo__contacto {
+        font-size: 1.5rem;
+        left: 8rem;
+        top: 16rem;
+    }
+     /*animacion*/
+     @keyframes h1MdMoveC {
+        0% {
+            top: 5rem;
+        }
+
+        100% {
+            top: 16rem;
+        }
+    }
+    .contacto__h2{
+        font-size: 1.5rem;
+    }
+    .form__email{
+        display: block;
+    }
+   textarea {
+        margin-left: 0.5rem;
+    }
+    .contact__contacto {
+        margin: $espaciadoSecundario;
+        padding: 0.5rem;
+
+        &--title{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }   
+    }    
+}
+
+
