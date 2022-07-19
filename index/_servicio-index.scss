@@ -8,7 +8,7 @@
 .card {
     background-color: $bgWhite;
     padding: 1.5rem;
-    margin: 1rem auto;
+    margin: $espaciadoSecundario;
     border: 1px solid rgb(160, 157, 157);
     width: 15rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -29,6 +29,8 @@ a.card__link {
     margin: 0.1rem 0.3rem;
     padding: 0.1rem 0.3rem 0.3rem 0.3rem;
     color: $fuenteBlue;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 0.5rem;
     transition: font-size 0.3s;
 
 

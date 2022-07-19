@@ -74,18 +74,18 @@ a.nav-link {
   padding: 2rem; }
   .imagen__inicio h1 {
     position: relative;
-    display: inline-block;
+    display: inline;
     color: #f8f8ff;
-    top: 25rem;
-    left: 14rem;
+    top: 21rem;
+    left: 8rem;
     animation: h1Moves 2s alternate; }
 
 /*animaciones*/
 @keyframes h1Moves {
   0% {
-    left: -10rem; }
+    left: -15rem; }
   100% {
-    left: 14rem; } }
+    left: 8rem; } }
 
 @media (max-width: 768px) {
   .imagen__inicio h1 {
@@ -107,28 +107,25 @@ a.nav-link {
     width: 100%; }
   .navbar {
     flex-wrap: wrap; }
-  /*.contenedor__navbar--list {
-        display: none;
-    }*/
   hr {
     width: 10rem;
     margin: 2rem 3rem 0.5rem 8rem; }
   .imagen__inicio {
     height: 20rem;
     margin: 0 auto; }
-  h1.titulo__inicio {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-right: 2rem;
-    top: 7rem;
-    animation: h1Moves 1s alternate; }
+    .imagen__inicio h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-right: 2rem;
+      top: 6rem;
+      animation: h1Moves 1s alternate; }
   /*animaciones*/
   @keyframes h1Moves {
     0% {
       top: -15rem; }
     100% {
-      top: 7rem; } } }
+      top: 6rem; } } }
 
 .pilares {
   margin-top: 2rem; }
@@ -208,6 +205,8 @@ a.card__link {
   margin: 0.1rem 0.3rem;
   padding: 0.1rem 0.3rem 0.3rem 0.3rem;
   color: #140d3b;
+  border: 1px solid #a09d9d;
+  border-radius: 0.5rem;
   transition: font-size 0.3s; }
   a.card__link:hover {
     font-size: larger; }
@@ -402,25 +401,10 @@ p.footer__copyright {
 .contenedor__navbar {
   margin-top: 0.5rem;
   padding-top: 0.5rem; }
-  .contenedor__navbar--footer {
-    list-style-type: none;
-    padding-left: 0.5rem; }
-  .contenedor__navbar a.footer--link {
-    transition: all 0.3s; }
-    .contenedor__navbar a.footer--link:hover {
-      transform: scale(1.2);
-      /*no me toma el scale*/
-      color: #140d3b;
-      text-decoration: underline;
-      text-decoration-color: #1D8348; }
 
-a.link--facebook, .link--instagram, .link--linkedin {
-  /*no me toma las transiciones de los iconos*/
-  transition: all 0.5s; }
-  a.link--facebook:hover, .link--instagram:hover, .link--linkedin:hover {
-    transform: scale(1.2);
-    /*no me toma el scale*/
-    color: #a71777; }
+ul.contenedor__navbar--footer {
+  list-style-type: none;
+  padding-left: 0.5rem; }
 
 @media (max-width: 768px) {
   .footer {

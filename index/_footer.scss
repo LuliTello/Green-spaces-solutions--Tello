@@ -20,32 +20,11 @@ p.footer__copyright {
 .contenedor__navbar {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
-
-&--footer {
+}
+ul.contenedor__navbar--footer {
     list-style-type: none;
     padding-left: 0.5rem;
-    
 }
-a.footer--link{
-    transition: all 0.3s;
-    &:hover{
-        transform: scale(1.2);/*no me toma el scale*/
-        color: $fuenteBlue;
-        text-decoration: underline;
-        text-decoration-color: #1D8348;
-    }
-}   
-}
-a.link--facebook,.link--instagram,.link--linkedin{/*no me toma las transiciones de los iconos*/
-    transition: all 0.5s;
-
-    &:hover{
-        transform: scale(1.2);/*no me toma el scale*/
-        color: $colorRrss;
-    }
-}
-
-
 
 
 @media(max-width: 768px) {
