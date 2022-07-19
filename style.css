@@ -49,10 +49,10 @@ h3 {
   height: 5rem; }
 
 /*transition*/
-a.nav-link {
+a.nav-link, a.footer-link:hover {
   transition: all 0.3s;
   padding: 1rem; }
-  a.nav-link:hover {
+  a.nav-link:hover, a.footer-link:hover {
     transform: scale(1.2);
     color: #140d3b;
     text-decoration: underline;
@@ -213,13 +213,18 @@ a.card__link {
 
 @media (max-width: 768px) {
   .services__grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; } }
+    gap: 1.5rem;
+    justify-items: center; } }
 
 @media (max-width: 480px) {
   .services__grid {
+    display: grid;
     grid-template-columns: 1fr;
-    margin: 1rem auto; }
+    gap: 0;
+    justify-items: center;
+    margin: 0 auto; }
   .card {
     height: 25rem; }
     .card__header img {
@@ -287,7 +292,8 @@ i.bi {
     padding: 2rem 2rem;
     font-weight: bold; }
 
-.boton {
+/*Extend*/
+.btn-base, .btn__form--send, .btn__form--cancel {
   background-color: rgba(255, 255, 255, 0.8);
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -297,7 +303,7 @@ i.bi {
   border-radius: 0.4rem;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
   transition: all 0.5s; }
-  .boton:hover {
+  .btn-base:hover, .btn__form--send:hover, .btn__form--cancel:hover {
     background-color: rgba(236, 181, 119, 0.8);
     font-size: larger;
     color: #000; }
@@ -379,7 +385,7 @@ i.bi {
       font-size: 1.3rem; }
   .iconos--content p {
     margin-left: 1rem; }
-  .boton {
+  .btn-base, .btn__form--send, .btn__form--cancel {
     letter-spacing: 1px;
     padding: 1rem 2rem; } }
 
@@ -402,9 +408,27 @@ p.footer__copyright {
   margin-top: 0.5rem;
   padding-top: 0.5rem; }
 
-ul.contenedor__navbar--footer {
-  list-style-type: none;
-  padding-left: 0.5rem; }
+a.footer-link {
+  color: #000;
+  /*extend*/ }
+  a.footer-link:hover {
+    font-weight: bold;
+    padding: 0.5rem; }
+
+.link--facebook {
+  color: #2f5ec2;
+  margin: 0 auto;
+  padding: 0 0.5rem; }
+
+.link--instagram {
+  color: #a71777;
+  margin: 0 auto;
+  padding: 0 0.5rem; }
+
+.link--linkedin {
+  color: #170e96;
+  margin: 0 auto;
+  padding: 0 0.5rem; }
 
 @media (max-width: 768px) {
   .footer {
@@ -756,6 +780,18 @@ label {
 
 .form__telefono {
   display: flex; }
+
+/*Extend*/
+.btn__form--send, .btn__form--cancel {
+  display: inline-block;
+  margin: 1rem 0.5rem 1rem 8rem;
+  font-size: 11px; }
+
+.btn__form--send:hover, .btn__form--cancel:hover {
+  background-color: #82E0AA; }
+
+.btn__form--cancel:hover {
+  background-color: rgba(236, 181, 119, 0.8); }
 
 .contact__contacto {
   margin: 3rem 1rem 0 3rem;

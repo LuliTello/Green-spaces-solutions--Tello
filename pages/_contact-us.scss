@@ -5,7 +5,7 @@
 }
 
 h1.titulo__contacto {
-    color: #f8f8ff;
+    color: $fuenteLight;
     font-size: 32px;
     font-style: italic;
     position: absolute;
@@ -70,6 +70,23 @@ label {
 .form__telefono {
     display: flex;
 }
+/*Extend*/
+.btn__form--send {
+    @extend .btn-base;
+    display: inline-block;
+    margin: 1rem 0.5rem 1rem 8rem;
+    font-size: 11px;
+}
+.btn__form--send:hover{
+    background-color: #82E0AA;
+}
+.btn__form--cancel{
+    @extend .btn-base;
+    @extend .btn__form--send;
+}
+.btn__form--cancel:hover{
+    background-color: $bgSecundario;
+}
 
 .contact__contacto {
     margin: 3rem 1rem 0 3rem;
@@ -89,7 +106,7 @@ label {
 @media(max-width: 768px){
     .titulo__contacto--img {
         width: 100%;
-        margin: 0 auto;
+        margin: $espaciadoPrimario;
     }
 
     h1.titulo__contacto {

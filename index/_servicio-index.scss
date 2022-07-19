@@ -1,8 +1,12 @@
-.services__grid {
+//mixin
+@mixin grid($columns, $gap){
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: $columns;
+    gap: $gap;
     justify-items: center;
+}
+.services__grid {
+    @include grid(repeat(4, 1fr),1rem )
 }
 
 .card {
@@ -41,15 +45,14 @@ a.card__link {
 }
 @media(max-width: 768px){
     .services__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        @include grid(repeat(2, 1fr), 1.5rem)
     }
 
 }
 @media(max-width:480px){
     .services__grid {
-        grid-template-columns: 1fr;
-        margin: 1rem auto;
+        @include grid(1fr, 0 );
+        margin: $espaciadoPrimario;
     }
 
     .card {

@@ -21,10 +21,29 @@ p.footer__copyright {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
 }
-ul.contenedor__navbar--footer {
-    list-style-type: none;
-    padding-left: 0.5rem;
+a.footer-link{
+    color: $fuenteDark;
+/*extend*/
+    &:hover{
+        @extend .nav-link;
+        font-weight: $grosorFuente;
+        padding: 0.5rem;
+    }
 }
+//Mapa
+$redesSociales : (
+    facebook:rgb(47, 94, 194),
+    instagram: rgb(167, 23, 119),
+    linkedin: rgb(23, 14, 150)
+);
+@each $icono, $color in $redesSociales{
+    .link--#{$icono}{
+        color: $color;
+        margin: $espaciadoPrimario;
+        padding: 0 0.5rem;
+    }
+}
+
 @media(max-width: 768px) {
 
     .footer {

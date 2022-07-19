@@ -47,8 +47,8 @@ i.bi {
         font-weight: $grosorFuente;
     }
 }
-
-.boton {
+/*Extend*/
+.btn-base {
     background-color: rgba(255, 255, 255, 0.8);
     font-weight: $grosorFuente;
     padding: 0.5rem 1rem;
@@ -130,7 +130,7 @@ i.bi {
     }
     .contacto__lista--iconos {
         margin-top: 2rem;
-        margin: 1rem auto;
+        margin: $espaciadoSecundario;
     }
 
     .contacto--contacto {
@@ -152,7 +152,7 @@ i.bi {
             text-align: center;
 
             h2 & {
-                margin: 1rem auto;
+                margin: $espaciadoSecundario;
             }
         }
 
@@ -189,7 +189,7 @@ i.bi {
         margin-left: 1rem;
     }
 
-    .boton {
+    .btn-base {
         letter-spacing: 1px;
         padding: 1rem 2rem;
     }
