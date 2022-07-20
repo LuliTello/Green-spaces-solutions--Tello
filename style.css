@@ -196,7 +196,10 @@ a.nav-link, a.footer-link:hover {
   border-radius: 0.5rem; }
   .card__header img {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    margin-bottom: 0.5rem; }
+  .card h3 {
+    font-weight: bold; }
 
 a.card__link {
   text-decoration: underline;
@@ -715,7 +718,7 @@ h1.galery__titulo {
     100% {
       top: 16rem; } }
   .galery__subtitulo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     margin: 1rem auto; }
   .galery__blog {
@@ -826,7 +829,9 @@ label {
   .form__telefono, .email {
     display: block; }
   .textarea {
-    margin-left: 3rem; } }
+    margin-left: 3rem; }
+  .btn__form--send, .btn__form--cancel, .btn__form--cancel {
+    margin: 1rem 5rem 1rem 6rem; } }
 
 @media (max-width: 480px) {
   .titulo__contacto--img {
@@ -847,6 +852,12 @@ label {
     display: block; }
   textarea {
     margin-left: 0.5rem; }
+  .btn__form {
+    display: flex;
+    justify-content: space-between; }
+  .btn__form--send, .btn__form--cancel, .btn__form--cancel {
+    margin: 0 auto;
+    padding: 0.5rem 1rem; }
   .contact__contacto {
     margin: 1rem auto;
     padding: 0.5rem; }
