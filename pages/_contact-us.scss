@@ -39,6 +39,13 @@ h1.titulo__contacto {
     &__content{ 
         margin: $espaciadoSecundario;
         padding: 1rem;}
+
+    &__textarea--block {
+        display: block;
+    }  
+    &__telefono {
+        display: flex;
+    }  
 }
 
 input,
@@ -59,35 +66,29 @@ textarea {
     display: inline;
 }
 
-.form__textarea--block {
-    display: block;
-}
-
 label {
     margin: 1rem;
 }
 
-.form__telefono {
-    display: flex;
-}
 /*Extend*/
 .btn__form--send {
     @extend .btn-base;
     display: inline-block;
     margin: 1rem 0.5rem 1rem 8rem;
     font-size: 11px;
-}
-.btn__form--send:hover{
-    background-color: #82E0AA;
+
+    &:hover{
+        background-color: #82E0AA;
+    }
 }
 .btn__form--cancel{
     @extend .btn-base;
     @extend .btn__form--send;
-}
-.btn__form--cancel:hover{
-    background-color: $bgSecundario;
-}
 
+    &:hover{
+        background-color: $bgSecundario;
+    }    
+}
 .contact__contacto {
     margin: 3rem 1rem 0 3rem;
     padding-left: 3rem;
@@ -96,8 +97,7 @@ label {
         font-size: 1.5rem;
         color: $fuenteBlue;
         text-decoration: underline;    
-    }
-   
+    }  
 }
 .contacto__lista--icono{
     margin: $espaciadoSecundario;
@@ -174,11 +174,13 @@ label {
     .btn__form {
         display: flex;
         justify-content: space-between;
+        
+        &--send,&--cancel{
+            margin: $espaciadoPrimario;
+            padding: 0.5rem 1rem;
+        }
     }
-    .btn__form--send,.btn__form--cancel{
-        margin: $espaciadoPrimario;
-        padding: 0.5rem 1rem;
-    }
+    
     .contact__contacto {
         margin: $espaciadoSecundario;
         padding: 0.5rem;

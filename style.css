@@ -297,7 +297,7 @@ i.bi {
 
 /*Extend*/
 .btn-base, .btn__form--send, .btn__form--cancel {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f8f8ff;
   font-weight: bold;
   padding: 0.5rem 1rem;
   border: 1px solid #000;
@@ -446,9 +446,7 @@ a.footer-link {
     margin-right: 5rem;
     padding-right: 3rem; }
   .contenedor__navbar--footer {
-    display: none; }
-  .footer__icons {
-    margin-top: 0.5rem; } }
+    display: none; } }
 
 @media (max-width: 480px) {
   .footer {
@@ -759,6 +757,10 @@ h1.titulo__contacto {
   .form__content {
     margin: 1rem auto;
     padding: 1rem; }
+  .form__textarea--block {
+    display: block; }
+  .form__telefono {
+    display: flex; }
 
 input,
 textarea {
@@ -775,23 +777,16 @@ textarea {
 .form__email, .nombre, .email {
   display: inline; }
 
-.form__textarea--block {
-  display: block; }
-
 label {
   margin: 1rem; }
-
-.form__telefono {
-  display: flex; }
 
 /*Extend*/
 .btn__form--send, .btn__form--cancel {
   display: inline-block;
   margin: 1rem 0.5rem 1rem 8rem;
   font-size: 11px; }
-
-.btn__form--send:hover, .btn__form--cancel:hover {
-  background-color: #82E0AA; }
+  .btn__form--send:hover, .btn__form--cancel:hover {
+    background-color: #82E0AA; }
 
 .btn__form--cancel:hover {
   background-color: rgba(236, 181, 119, 0.8); }
@@ -855,9 +850,9 @@ label {
   .btn__form {
     display: flex;
     justify-content: space-between; }
-  .btn__form--send, .btn__form--cancel, .btn__form--cancel {
-    margin: 0 auto;
-    padding: 0.5rem 1rem; }
+    .btn__form--send, .btn__form--cancel, .btn__form--cancel {
+      margin: 0 auto;
+      padding: 0.5rem 1rem; }
   .contact__contacto {
     margin: 1rem auto;
     padding: 0.5rem; }

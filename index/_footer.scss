@@ -66,11 +66,6 @@ $redesSociales : (
     .contenedor__navbar--footer {
         display: none;
     }
-
-    .footer__icons {
-        margin-top: 0.5rem;
-    }
-
 }
 
 @media(max-width:480px) {
@@ -96,6 +91,4 @@ $redesSociales : (
     a.footer__icons {
         margin-bottom: 0;
     }
-
-
 }
