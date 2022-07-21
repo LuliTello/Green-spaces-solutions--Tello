@@ -64,7 +64,7 @@ a.nav-link, a.footer-link:hover {
 
 /*h1 inicio*/
 .imagen__inicio {
-  background-image: url(./assets/img-inicio1.jpg);
+  background-image: url(../assets/img-inicio1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -873,8 +873,9 @@ label {
 
 @media (max-width: 480px) {
   .footer__copyright--pages {
-    margin: 0.5rem auto 0 auto;
+    margin: 0 auto 0 auto;
     font-size: 0.7rem;
     text-align: center; }
   .footer__icons {
+    margin-top: 0.5rem;
     padding-top: 0.5rem; } }
