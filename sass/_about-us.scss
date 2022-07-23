@@ -6,7 +6,7 @@ video {
 }
 
 h1.titulo__nosotros {
-    color: #f8f8ff;
+    color: $fuenteLight;
     font-size: 32px;
     font-style: italic;
     position: absolute;
@@ -34,13 +34,19 @@ h1.titulo__nosotros {
         font-size: 2rem;
         padding: 2rem 1.5rem;
         text-decoration: underline;
-        color: rgb(20, 13, 59);
+        color: $fuenteBlue;
     }
     p {
         font-size: 1.2rem;
         line-height: 1.5;
         padding: 0 3rem 1rem 3rem;
         margin: 0 6rem 1rem 6rem;
+
+        &::first-letter{
+            font: 2rem;
+            font-style: italic;
+            font-weight: $grosorFuente;
+        }
     }
 }
 

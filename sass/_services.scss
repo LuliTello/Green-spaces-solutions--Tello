@@ -6,7 +6,7 @@
 }
 
 h1.services__titulo {
-    color: #f8f8ff;
+    color: $fuenteLight;
     font-size: 32px;
     font-style: italic;
     text-align: center;
@@ -49,25 +49,29 @@ h1.services__titulo {
     }
 }
 .mantenimiento {
-    background-color: rgba(236, 181, 119, 0.8);
+    background-color: $bgSecundario;
     border-radius: 1.5rem;
 }
 .services__mantenimiento--info {
     text-align: left;
-    color: rgb(20, 13, 59);
+    color: $fuenteBlue;
     
 }
 .services__subtitulo{
     font-size: 1.5rem;
 }
+.services__texto::first-letter{
+    font-size: 1.5rem;
+    font-style: italic;
+}
 
 .info__servicios {
     text-align: left;
-    background-color: rgba(236, 181, 119, 0.8);
+    background-color: $bgSecundario;
     border-radius: 2rem;
     margin: $espaciadoSecundario;
     padding: 1rem;
-    color: rgb(20, 13, 59);
+    color: $fuenteBlue;
 
     h2{ font-size: 1.5rem;
         margin: $espaciadoSecundario;

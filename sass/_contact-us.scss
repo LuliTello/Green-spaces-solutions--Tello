@@ -74,7 +74,7 @@ label {
 .btn__form--send {
     @extend .btn-base;
     display: inline-block;
-    margin: 1rem 0.5rem 1rem 8rem;
+    margin: 1rem 0.5rem 1rem 7rem;
     font-size: 11px;
 
     &:hover{
@@ -140,7 +140,7 @@ label {
         margin-left: 3rem;
     } 
     .btn__form--send,.btn__form--cancel {
-        margin: 1rem 5rem 1rem 6rem;
+        margin: 1rem 3rem 1rem 6rem;
     } 
 }
 @media(max-width:480px){
@@ -169,7 +169,8 @@ label {
         display: block;
     }
    textarea {
-        margin-left: 0.5rem;
+        margin:$espaciadoSecundario;
+        padding-left: 0;
     }
     .btn__form {
         display: flex;

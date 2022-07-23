@@ -498,6 +498,10 @@ h1.titulo__nosotros {
     line-height: 1.5;
     padding: 0 3rem 1rem 3rem;
     margin: 0 6rem 1rem 6rem; }
+    .nosotros p::first-letter {
+      font: 2rem;
+      font-style: italic;
+      font-weight: bold; }
 
 @media (max-width: 768px) {
   video {
@@ -587,6 +591,10 @@ h1.services__titulo {
 
 .services__subtitulo {
   font-size: 1.5rem; }
+
+.services__texto::first-letter {
+  font-size: 1.5rem;
+  font-style: italic; }
 
 .info__servicios {
   text-align: left;
@@ -721,7 +729,8 @@ h1.galery__titulo {
     margin: 1rem auto; }
   .galery__blog {
     grid-template-columns: 1fr;
-    padding: 1rem; } }
+    padding: 1rem;
+    margin: 0 auto; } }
 
 .titulo__contacto--img {
   width: 100%;
@@ -783,7 +792,7 @@ label {
 /*Extend*/
 .btn__form--send, .btn__form--cancel {
   display: inline-block;
-  margin: 1rem 0.5rem 1rem 8rem;
+  margin: 1rem 0.5rem 1rem 7rem;
   font-size: 11px; }
   .btn__form--send:hover, .btn__form--cancel:hover {
     background-color: #82E0AA; }
@@ -826,7 +835,7 @@ label {
   .textarea {
     margin-left: 3rem; }
   .btn__form--send, .btn__form--cancel, .btn__form--cancel {
-    margin: 1rem 5rem 1rem 6rem; } }
+    margin: 1rem 3rem 1rem 6rem; } }
 
 @media (max-width: 480px) {
   .titulo__contacto--img {
@@ -846,7 +855,8 @@ label {
   .form__email {
     display: block; }
   textarea {
-    margin-left: 0.5rem; }
+    margin: 1rem auto;
+    padding-left: 0; }
   .btn__form {
     display: flex;
     justify-content: space-between; }
