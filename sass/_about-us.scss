@@ -5,7 +5,7 @@ video {
     position: relative;
 }
 
-h1.titulo__nosotros {
+.titulo__nosotros {
     color: $fuenteLight;
     font-size: 32px;
     font-style: italic;
@@ -82,7 +82,7 @@ h1.titulo__nosotros {
     h1.titulo__nosotros {
         font-size: 1.5rem;
         top: 15rem;
-        left: 6rem;
+        left: 5rem;
         animation: h1MdMoveA 2s alternate;
     }
 

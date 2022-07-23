@@ -7,11 +7,8 @@
 }
 
 h1.galery__titulo {
-    color: $fuenteLight;
-    font-size: 32px;
-    font-style: italic;
+    @extend .titulo__nosotros;
     text-align: center;
-    position: absolute;
     top: 32rem;
     left: 38rem;
     animation: h1MdMoveG 2s alternate;
@@ -82,7 +79,7 @@ h1.galery__titulo {
     h1.galery__titulo {
         font-size: 1.5rem;
         top: 16rem;
-        left: 5rem;
+        left: 4rem;
         animation: h1MdMoveG 2s alternate;
     }
 

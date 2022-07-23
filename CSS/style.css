@@ -469,7 +469,7 @@ video {
   margin-bottom: 2rem;
   position: relative; }
 
-h1.titulo__nosotros {
+.titulo__nosotros, h1.services__titulo, h1.galery__titulo, h1.titulo__contacto {
   color: #f8f8ff;
   font-size: 32px;
   font-style: italic;
@@ -506,7 +506,7 @@ h1.titulo__nosotros {
 @media (max-width: 768px) {
   video {
     height: 100%; }
-  h1.titulo__nosotros {
+  h1.titulo__nosotros, h1.services__titulo, h1.galery__titulo, h1.titulo__contacto {
     top: 17rem;
     left: 15rem;
     animation: h1MdMove 2s alternate; }
@@ -521,10 +521,10 @@ h1.titulo__nosotros {
     padding-top: 1rem; } }
 
 @media (max-width: 480px) {
-  h1.titulo__nosotros {
+  h1.titulo__nosotros, h1.services__titulo, h1.galery__titulo, h1.titulo__contacto {
     font-size: 1.5rem;
     top: 15rem;
-    left: 6rem;
+    left: 5rem;
     animation: h1MdMoveA 2s alternate; }
   /*animacion*/
   @keyframes h1MdMoveA {
@@ -550,11 +550,7 @@ h1.titulo__nosotros {
   position: relative; }
 
 h1.services__titulo {
-  color: #f8f8ff;
-  font-size: 32px;
-  font-style: italic;
   text-align: center;
-  position: absolute;
   top: 32rem;
   left: 40rem;
   animation: h1PagesMove 2s alternate; }
@@ -633,7 +629,7 @@ h1.services__titulo {
   h1.services__titulo {
     font-size: 1.5rem;
     top: 15rem;
-    left: 4rem;
+    left: 2rem;
     animation: h1MdMoveS 2s alternate; }
   /*animacion*/
   @keyframes h1MdMoveS {
@@ -659,11 +655,7 @@ h1.services__titulo {
   margin-bottom: 2rem; }
 
 h1.galery__titulo {
-  color: #f8f8ff;
-  font-size: 32px;
-  font-style: italic;
   text-align: center;
-  position: absolute;
   top: 32rem;
   left: 38rem;
   animation: h1MdMoveG 2s alternate; }
@@ -715,7 +707,7 @@ h1.galery__titulo {
   h1.galery__titulo {
     font-size: 1.5rem;
     top: 16rem;
-    left: 5rem;
+    left: 4rem;
     animation: h1MdMoveG 2s alternate; }
   /*animacion*/
   @keyframes h1MdMoveG {
@@ -738,10 +730,6 @@ h1.galery__titulo {
   position: relative; }
 
 h1.titulo__contacto {
-  color: #f8f8ff;
-  font-size: 32px;
-  font-style: italic;
-  position: absolute;
   top: 32rem;
   left: 40rem;
   animation: h1MdMoveC 2s alternate; }
@@ -842,7 +830,7 @@ label {
     height: 15rem; }
   h1.titulo__contacto {
     font-size: 1.5rem;
-    left: 8rem;
+    left: 7rem;
     top: 16rem; }
   /*animacion*/
   @keyframes h1MdMoveC {

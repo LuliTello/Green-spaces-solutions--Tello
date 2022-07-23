@@ -6,11 +6,8 @@
 }
 
 h1.services__titulo {
-    color: $fuenteLight;
-    font-size: 32px;
-    font-style: italic;
+    @extend .titulo__nosotros;
     text-align: center;
-    position: absolute;
     top: 32rem;
     left: 40rem;
     animation: h1PagesMove 2s alternate;
@@ -118,7 +115,7 @@ h1.services__titulo {
     h1.services__titulo {
         font-size: 1.5rem;
         top: 15rem;
-        left: 4rem;
+        left: 2rem;
         animation: h1MdMoveS 2s alternate;
     }
 

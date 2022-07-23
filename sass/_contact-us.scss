@@ -5,10 +5,7 @@
 }
 
 h1.titulo__contacto {
-    color: $fuenteLight;
-    font-size: 32px;
-    font-style: italic;
-    position: absolute;
+    @extend .titulo__nosotros;
     top: 32rem;
     left: 40rem;
     animation: h1MdMoveC 2s alternate;
@@ -149,7 +146,7 @@ label {
     }
     h1.titulo__contacto {
         font-size: 1.5rem;
-        left: 8rem;
+        left: 7rem;
         top: 16rem;
     }
      /*animacion*/
