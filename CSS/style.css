@@ -298,6 +298,7 @@ i.bi {
 /*Extend*/
 .btn-base, .btn__form--send, .btn__form--cancel {
   background-color: #f8f8ff;
+  color: #000;
   font-weight: bold;
   padding: 0.5rem 1rem;
   border: 1px solid #000;
