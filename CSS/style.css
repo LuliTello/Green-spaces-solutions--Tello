@@ -509,9 +509,12 @@ a.link--linkedin:hover {
   a.footer__icons {
     margin-bottom: 0; } }
 
+.video {
+  width: 100%; }
+
 video {
   width: 100%;
-  height: 30rem;
+  height: 100%;
   margin-bottom: 2rem;
   position: relative; }
 
@@ -520,7 +523,7 @@ video {
   font-size: 32px;
   font-style: italic;
   position: absolute;
-  top: 32rem;
+  top: 36rem;
   left: 38rem;
   animation: h1MdMoveA 2s alternate; }
 
@@ -529,7 +532,7 @@ video {
   0% {
     top: 5rem; }
   100% {
-    top: 32rem; } }
+    top: 36rem; } }
 
 .nosotros {
   margin: 0 2rem;
@@ -550,10 +553,8 @@ video {
       font-weight: bold; }
 
 @media (max-width: 768px) {
-  video {
-    height: 100%; }
   h1.titulo__nosotros, h1.services__titulo, h1.galery__titulo, h1.titulo__contacto {
-    top: 17rem;
+    top: 19rem;
     left: 15rem;
     animation: h1MdMove 2s alternate; }
   /*animacion*/
@@ -561,7 +562,7 @@ video {
     0% {
       top: 1rem; }
     100% {
-      top: 17rem; } }
+      top: 19rem; } }
   .footer__copyright--pages {
     margin-top: 1rem;
     padding-top: 1rem; } }
@@ -569,7 +570,7 @@ video {
 @media (max-width: 480px) {
   h1.titulo__nosotros, h1.services__titulo, h1.galery__titulo, h1.titulo__contacto {
     font-size: 1.5rem;
-    top: 15rem;
+    top: 13rem;
     left: 5rem;
     animation: h1MdMoveA 2s alternate; }
   /*animacion*/
@@ -577,7 +578,7 @@ video {
     0% {
       top: 1rem; }
     100% {
-      top: 15rem; } }
+      top: 13rem; } }
   .nosotros h2 {
     font-size: 26px;
     text-align: center;
@@ -588,6 +589,19 @@ video {
     text-align: center;
     margin: 1rem;
     padding: 1rem; } }
+
+@media (max-width: 320px) {
+  h1.titulo__nosotros, h1.services__titulo, h1.galery__titulo, h1.titulo__contacto {
+    font-size: 1.5rem;
+    top: 10rem;
+    left: 6rem;
+    animation: h1MdMoveA 2s alternate; }
+  /*animacion*/
+  @keyframes h1MdMoveA {
+    0% {
+      top: 1rem; }
+    100% {
+      top: 10rem; } } }
 
 .services__img {
   width: 100%;

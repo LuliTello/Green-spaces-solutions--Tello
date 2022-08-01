@@ -1,6 +1,9 @@
+.video{
+    width: 100%;
+}
 video {
     width: 100%;
-    height: 30rem;
+    height: 100%;
     margin-bottom: 2rem;
     position: relative;
 }
@@ -10,7 +13,7 @@ video {
     font-size: 32px;
     font-style: italic;
     position: absolute;
-    top: 32rem;
+    top: 36rem;
     left: 38rem;
     animation: h1MdMoveA 2s alternate;
 }
@@ -22,7 +25,7 @@ video {
     }
 
     100% {
-        top: 32rem;
+        top: 36rem;
     }
 }
 
@@ -51,12 +54,9 @@ video {
 }
 
 @media(max-width: 768px){
-    video {
-        height: 100%;
-    }
 
     h1.titulo__nosotros {
-        top: 17rem;
+        top: 19rem;
         left: 15rem;
         animation: h1MdMove 2s alternate;
     }
@@ -68,7 +68,7 @@ video {
         }
 
         100% {
-            top: 17rem;
+            top: 19rem;
         }
     }
 
@@ -81,7 +81,7 @@ video {
 @media(max-width:480px){
     h1.titulo__nosotros {
         font-size: 1.5rem;
-        top: 15rem;
+        top: 13rem;
         left: 5rem;
         animation: h1MdMoveA 2s alternate;
     }
@@ -93,7 +93,7 @@ video {
         }
 
         100% {
-            top: 15rem;
+            top: 13rem;
         }
     }
 
@@ -109,6 +109,24 @@ video {
         text-align: center;
         margin: 1rem;
         padding: 1rem;
+    }
+}
+@media(max-width:320px){
+    h1.titulo__nosotros {
+        font-size: 1.5rem;
+        top: 10rem;
+        left: 6rem;
+        animation: h1MdMoveA 2s alternate;
+    }
+    /*animacion*/
+    @keyframes h1MdMoveA {
+        0% {
+            top: 1rem;
+        }
+
+        100% {
+            top: 10rem;
+        }
     }
 
 }
