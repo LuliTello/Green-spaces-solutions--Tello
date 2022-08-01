@@ -43,11 +43,29 @@ $redesSociales : (
         padding: 0 0.5rem;
     }
 }
-
+a.link--facebook:hover{
+    color: $colorRrss;
+}
+a.link--instagram:hover{
+    color: $colorRrss;
+}
+a.link--linkedin:hover{
+    color: $colorRrss;
+}
+@media(max-width: 992px){
+    .footer{
+        justify-content: space-around;
+    }
+    p.footer__copyright{
+        font-size: 1rem;
+    }
+    .contenedor__navbar--footer {
+        display: none;
+    }
+}
 @media(max-width: 768px) {
 
     .footer {
-        justify-content: space-around;
         flex-wrap: wrap;
 
         &__copyright {
@@ -62,16 +80,11 @@ $redesSociales : (
         margin-right: 5rem;
         padding-right: 3rem;
     }
-
-    .contenedor__navbar--footer {
-        display: none;
-    }
 }
 
 @media(max-width:480px) {
 
     .footer {
-        flex-wrap: wrap;
         margin-top: 0.5rem;
         padding: 0.5rem;
 

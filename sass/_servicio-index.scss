@@ -45,11 +45,12 @@ a.card__link {
     font-size: larger;
     }
 }
-@media(max-width: 768px){
+@media(max-width:992px){
     .services__grid {
         @include grid(repeat(2, 1fr), 1.5rem)
     }
 }
+
 @media(max-width:480px){
     .services__grid {
         @include grid(1fr, 0 );
