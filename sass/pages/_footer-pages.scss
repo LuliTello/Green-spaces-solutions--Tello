@@ -8,16 +8,17 @@
     margin-top: 1rem;
     font-weight: $grosorFuente;
 }
+/*mobile last medias*/
+@media(max-width:768px){
+    .footer__icons{
+        margin-top: 1rem;
+    }    
+}
 @media(max-width:480px) {
-    
     .footer__copyright--pages {
         margin: 0 auto $espaciadoPrimario;
         font-size: 0.7rem;
         text-align: center;
-    }
-    .footer__icons{
-        margin-top: 0.5rem;
-        padding-top: 0.5rem;
     }
 }
    
