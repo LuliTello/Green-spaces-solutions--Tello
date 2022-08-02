@@ -599,15 +599,16 @@ video {
     100% {
       top: 10rem; } } }
 
-.services__img {
-  width: 100%;
-  height: 30rem;
-  opacity: 0.8;
+.services {
   position: relative; }
+  .services__img {
+    width: 100%;
+    height: 30rem;
+    opacity: 0.8; }
 
 h1.services__titulo {
   text-align: center;
-  top: 28rem;
+  top: 24rem;
   left: 40rem;
   animation: h1PagesMove 2s alternate; }
 
@@ -616,7 +617,7 @@ h1.services__titulo {
   0% {
     top: 5rem; }
   100% {
-    top: 28rem; } }
+    top: 24rem; } }
 
 .img__servicios {
   display: flex;
@@ -641,13 +642,11 @@ h1.services__titulo {
 .services__mantenimiento--info {
   text-align: left;
   color: #140d3b; }
-
-.services__subtitulo {
-  font-size: 1.5rem; }
-
-.services__texto::first-letter {
-  font-size: 1.5rem;
-  font-style: italic; }
+  .services__mantenimiento--info h2 {
+    font-size: 1.5rem; }
+  .services__mantenimiento--info p::first-letter {
+    font-size: 1.5rem;
+    font-style: italic; }
 
 .info__servicios {
   text-align: left;
@@ -659,9 +658,12 @@ h1.services__titulo {
   .info__servicios h2 {
     font-size: 1.5rem;
     margin: 1rem auto; }
-  .info__servicios p {
+  .info__servicios p::first-letter {
+    font-size: 1.5rem;
+    font-style: italic;
     line-height: 1.5; }
 
+/*mobile last medias*/
 @media (max-width: 992px) {
   .img3__servicios {
     display: none; }
@@ -671,7 +673,7 @@ h1.services__titulo {
 
 @media (max-width: 768px) {
   h1.services__titulo {
-    top: 20rem;
+    top: 12rem;
     left: 12rem;
     animation: h1MdMoveS 2s alternate; }
   /*animacion*/
@@ -679,7 +681,7 @@ h1.services__titulo {
     0% {
       top: 1rem; }
     100% {
-      top: 20rem; } }
+      top: 12rem; } }
   .info__servicios,
   .services__mantenimiento--info {
     text-align: center; }
@@ -694,20 +696,22 @@ h1.services__titulo {
     height: 15rem; }
   h1.services__titulo {
     font-size: 1.5rem;
-    top: 13rem;
-    left: 4rem;
+    top: 6rem;
+    left: 3rem;
     animation: h1MdMoveS 2s alternate; }
   /*animacion*/
   @keyframes h1MdMoveS {
     0% {
       top: 1rem; }
     100% {
-      top: 13rem; } }
+      top: 6rem; } }
   .services__mantenimiento--info,
   .info__servicios {
     margin: 0.5rem;
     padding: 0.5rem; }
-  .mantenimiento__img, .img1__servicios, .img3__servicios {
+  .mantenimiento__img,
+  .img1__servicios,
+  .img3__servicios {
     display: none; }
   img.img2__servicios {
     width: 100%;
@@ -719,7 +723,7 @@ h1.services__titulo {
   .services__subtitulo {
     margin: 1rem auto; }
   img.img2__servicios {
-    width: 20rem;
+    width: 18rem;
     height: 15rem; } }
 
 .galery {
