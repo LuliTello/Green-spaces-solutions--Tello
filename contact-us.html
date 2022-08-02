@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Mantenimiento de espacios verdes. Paisajismo, parquizacion y diseño de proyectos. Instalacion de sistema de riego" />
+    <meta name="keywords" content="espacio, mejora, riego, paisajismo, cesped, parquizacion, mantenimiento">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
@@ -13,14 +16,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <title>Green Spaces Solutions - Parquizaciones, Riego y mantenimiento</title>
-    <meta name="description"
-        content="Mantenimiento de espacios verdes. Paisajismo, parquizacion y diseño de proyectos. Instalacion de sistema de riego" />
-    <meta name="keywords" content="espacio, mejora, riego, paisajismo, cesped, parquizacion, mantenimiento">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./CSS/style.css" />
 </head>
@@ -32,6 +29,9 @@
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
                     <img class="header__logo" src="./assets/faviconio-logo/logo 2.png" alt="logo-empresa">
+                </a>
+                <a class="navbar-brand m-0" href="./index.html">
+                    <img class="header__logo--compr" src="./assets/faviconio-logo/logo compr.png" alt="logo-empresa-comprimido">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,8 @@
         </nav>
     </header>
     <main>
-        <section class="container">
+        <!--Imagen y titulo-->
+        <section>
             <div class="titulo__contacto">
                 <img class="titulo__contacto--img" src="./assets/img-contactus.jpg" alt="escribinos">
                 <h1 class="titulo__contacto fw-bold">Escribinos!</h1>
@@ -71,25 +72,25 @@
             <!--formulario-->
             <form class="form" action="" method="" enctype="">
                 <div class="form__content">
-                    <div class="mb-3">
-                        <div class="nombre">
-                            <label for="nombre" class="form-label">Nombre y Apellido:</label>
-                            <input class="form__nombre" type="text" id="nombre" name="nombre"
+                        <div class="form__content--nombre">
+                            <label for="nombre">Nombre y Apellido:</label>
+                            <input class="form__content--nombre-nombre" type="text" id="nombre" name="nombre"
                                 placeholder="Nombre y apellido">
                         </div>
-                        <div class="email">
-                            <label for="email" class="form-label">Email:</label>
-                            <input class="form__email" type="email" name="email" id="email" placeholder="Email">
+                        <div class="form__content--email">
+                            <label for="email">Email:</label>
+                            <input class="form__content--email-email" type="email" name="email" id="email" placeholder="Email">
                         </div>
-                    </div>
-                    <div class="form__telefono">
-                        <label for="telefono" class="form-label">Teléfono:</label>
+                    <div class="form__content--telefono">
+                        <label for="telefono">Teléfono:</label>
                         <input type="text" name="telefono" id="telefono" placeholder="Telefono">
                     </div>
-                    <label class="form__textarea--block form-label" for="consulta">Consúltenos</label>
-                    <textarea class="form__textarea--block" name="consulta" id="consulta" cols="30" rows="15"
+                    <div class="form__content--textarea">
+                    <label class="form__content--textarea--block" for="consulta">Consúltenos</label>
+                    <textarea class="form__content--textarea--block" name="consulta" id="consulta" cols="30" rows="15"
                         placeholder="Deje su consulta"></textarea>
-                    <div class="btn__form">
+                    </div>
+                        <div class="btn__form">
                         <button class="btn__form--send btn-light fw-bold" type="submit">ENVIAR!</button>
                         <button class="btn__form--cancel btn-light fw-bold" type="reset">CANCELAR</button>
                     </div>
@@ -122,7 +123,7 @@
             <div>
                 <p class="footer__copyright--pages">Copyright &copy; 2022. All rights reserved</p>
             </div>
-            <!--bootstrap-->
+            <!--bootstrap iconos-->
             <div class="footer__icons">
                 <a href="" class="link--facebook fs-2 text-decoration-none">
                     <i class="bi bi-facebook"></i>
