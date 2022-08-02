@@ -1,15 +1,18 @@
-.galery__img {
-    width: 100%;
-    height: 30rem;
-    opacity: 0.8;
+.galery {
     position: relative;
-    margin-bottom: 2rem;
+
+    &__img {
+        width: 100%;
+        height: 30rem;
+        opacity: 0.8;
+        margin-bottom: 2rem;
+    }
 }
 
 h1.galery__titulo {
     @extend .titulo__nosotros;
     text-align: center;
-    top: 32rem;
+    top: 26rem;
     left: 38rem;
     animation: h1MdMoveG 2s alternate;
 }
@@ -21,7 +24,7 @@ h1.galery__titulo {
     }
 
     100% {
-        top: 32rem;
+        top: 26rem;
     }
 }
 
@@ -41,7 +44,7 @@ h1.galery__titulo {
     gap: 1rem;
     margin: 0 1rem 3rem 1rem;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         border-radius: 0.3rem;
@@ -49,13 +52,15 @@ h1.galery__titulo {
     }
 
 }
-@media(max-width: 768px){
-     .galery__blog {
+
+/*mobile last medias*/
+@media(max-width: 768px) {
+    .galery__blog {
         grid-template-columns: repeat(2, 1fr);
     }
 
     h1.galery__titulo {
-        top: 19rem;
+        top: 13rem;
         left: 13rem;
         animation: h1MdMoveG 2s alternate;
     }
@@ -67,18 +72,19 @@ h1.galery__titulo {
         }
 
         100% {
-            top: 19rem;
+            top: 13rem;
         }
     }
 }
-@media(max-width:576px){
-    .galery__img{
+
+@media(max-width:576px) {
+    .galery__img {
         height: 15rem;
     }
-    
+
     h1.galery__titulo {
         font-size: 1.5rem;
-        top: 13rem;
+        top: 7rem;
         left: 10rem;
         animation: h1MdMoveG 2s alternate;
     }
@@ -90,7 +96,7 @@ h1.galery__titulo {
         }
 
         100% {
-            top: 13rem;
+            top: 7rem;
         }
     }
 
@@ -99,32 +105,22 @@ h1.galery__titulo {
         text-align: center;
         margin: $espaciadoSecundario;
     }
+
     .galery__blog {
         grid-template-columns: 1fr;
         padding: 1rem;
         margin: $espaciadoPrimario;
     }
 }
-@media(max-width:480px){
-    
+
+@media(max-width:480px) {
+
     h1.galery__titulo {
-        top: 13rem;
         left: 4rem;
-        animation: h1MdMoveG 2s alternate;
-    }
-
-    /*animacion*/
-    @keyframes h1MdMoveG {
-        0% {
-            top: 1rem;
-        }
-
-        100% {
-            top: 13rem;
-        }
     }
 }
-@media(max-width:320px){
+
+@media(max-width:320px) {
     h1.galery__titulo {
         left: 2rem;
         animation: h1MdMoveG 2s alternate;

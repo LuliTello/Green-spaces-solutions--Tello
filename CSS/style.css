@@ -722,16 +722,17 @@ h1.services__titulo {
     width: 20rem;
     height: 15rem; } }
 
-.galery__img {
-  width: 100%;
-  height: 30rem;
-  opacity: 0.8;
-  position: relative;
-  margin-bottom: 2rem; }
+.galery {
+  position: relative; }
+  .galery__img {
+    width: 100%;
+    height: 30rem;
+    opacity: 0.8;
+    margin-bottom: 2rem; }
 
 h1.galery__titulo {
   text-align: center;
-  top: 32rem;
+  top: 26rem;
   left: 38rem;
   animation: h1MdMoveG 2s alternate; }
 
@@ -740,7 +741,7 @@ h1.galery__titulo {
   0% {
     top: 5rem; }
   100% {
-    top: 32rem; } }
+    top: 26rem; } }
 
 .galery__subtitulo {
   color: #140d3b;
@@ -762,11 +763,12 @@ h1.galery__titulo {
     border-radius: 0.3rem;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5); }
 
+/*mobile last medias*/
 @media (max-width: 768px) {
   .galery__blog {
     grid-template-columns: repeat(2, 1fr); }
   h1.galery__titulo {
-    top: 19rem;
+    top: 13rem;
     left: 13rem;
     animation: h1MdMoveG 2s alternate; }
   /*animacion*/
@@ -774,14 +776,14 @@ h1.galery__titulo {
     0% {
       top: 5rem; }
     100% {
-      top: 19rem; } } }
+      top: 13rem; } } }
 
 @media (max-width: 576px) {
   .galery__img {
     height: 15rem; }
   h1.galery__titulo {
     font-size: 1.5rem;
-    top: 13rem;
+    top: 7rem;
     left: 10rem;
     animation: h1MdMoveG 2s alternate; }
   /*animacion*/
@@ -789,7 +791,7 @@ h1.galery__titulo {
     0% {
       top: 1rem; }
     100% {
-      top: 13rem; } }
+      top: 7rem; } }
   .galery__subtitulo {
     font-size: 1.2rem;
     text-align: center;
@@ -801,15 +803,7 @@ h1.galery__titulo {
 
 @media (max-width: 480px) {
   h1.galery__titulo {
-    top: 13rem;
-    left: 4rem;
-    animation: h1MdMoveG 2s alternate; }
-  /*animacion*/
-  @keyframes h1MdMoveG {
-    0% {
-      top: 1rem; }
-    100% {
-      top: 13rem; } } }
+    left: 4rem; } }
 
 @media (max-width: 320px) {
   h1.galery__titulo {
@@ -896,6 +890,7 @@ label {
   margin: 1rem auto;
   padding-bottom: 1rem; }
 
+/*mobile last medias*/
 @media (max-width: 992px) {
   h1.titulo__contacto {
     left: 40rem; } }
@@ -932,7 +927,8 @@ label {
   .form__content--telefono, .form__content--nombre, .form__content--email, .form__content--textarea {
     flex-direction: column;
     margin: 0 auto; }
-  input, label {
+  input,
+  label {
     text-align: center;
     margin-bottom: 0.5rem; }
   .contacto__h2 {
