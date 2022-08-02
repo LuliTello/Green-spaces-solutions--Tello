@@ -8,7 +8,7 @@
 h1.services__titulo {
     @extend .titulo__nosotros;
     text-align: center;
-    top: 32rem;
+    top: 28rem;
     left: 40rem;
     animation: h1PagesMove 2s alternate;
 }
@@ -21,7 +21,7 @@ h1.services__titulo {
     }
 
     100% {
-        top: 32rem;
+        top: 28rem;
     }
 }
 
@@ -43,6 +43,7 @@ h1.services__titulo {
 
     li {
         display: list-item;
+        background-color: transparent;
     }
 }
 .mantenimiento {
@@ -78,6 +79,15 @@ h1.services__titulo {
         line-height: 1.5;
     }
 }
+@media(max-width: 992px){
+    .img3__servicios{
+        display:none;
+    }
+    .img__servicios img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
 
 @media(max-width: 768px){
     
@@ -102,6 +112,10 @@ h1.services__titulo {
         text-align: center;
     }
 
+    .lista--mant{
+        margin: $espaciadoSecundario;
+    }
+
     .img__servicios img {
         width: 15rem;
         height: 15rem;
@@ -112,10 +126,11 @@ h1.services__titulo {
     .services__img{
         height: 15rem;
     }
+
     h1.services__titulo {
         font-size: 1.5rem;
-        top: 15rem;
-        left: 2rem;
+        top: 13rem;
+        left: 4rem;
         animation: h1MdMoveS 2s alternate;
     }
 
@@ -126,7 +141,7 @@ h1.services__titulo {
         }
 
         100% {
-            top: 15rem;
+            top: 13rem;
         }
     }
 
@@ -141,8 +156,20 @@ h1.services__titulo {
     }
 
     img.img2__servicios {
-        width: 25rem;
+        width: 100%;
         height: 20rem;
     }
+}
+@media(max-width:320px){
+    h1.services__titulo {
+        left: 1rem;
+    }
 
+    .services__subtitulo{
+        margin: $espaciadoSecundario;
+    }
+    img.img2__servicios {
+        width: 20rem;
+        height: 15rem;
+    }
 }
