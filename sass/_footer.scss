@@ -9,6 +9,9 @@
         margin-top: 0.5rem;
         padding-top: 0.5rem;
     }
+    &__icons--index{
+        margin-right: 1.5rem;
+    }
 }
 
 p.footer__copyright {
@@ -52,6 +55,7 @@ a.link--instagram:hover{
 a.link--linkedin:hover{
     color: $colorRrss;
 }
+/*mobile last medias*/
 @media(max-width: 992px){
     .footer{
         justify-content: space-around;
@@ -68,40 +72,37 @@ a.link--linkedin:hover{
     .footer {
         flex-wrap: wrap;
 
-        &__copyright {
-            margin-top: 2rem;
-            padding-bottom: 1rem;
-            font-weight: $grosorFuente;
+        &__icons--index{
+            margin: 0.5rem auto;
         }
     }
 
     p.footer__copyright {
         font-size: 1rem;
-        margin-right: 5rem;
+        margin-right: 3rem;
+        margin-left: 2rem;
         padding-right: 3rem;
     }
 }
 
 @media(max-width:480px) {
-
     .footer {
         margin-top: 0.5rem;
-        padding: 0.5rem;
-
-        &__copyright {
-            margin: 0.5rem auto $espaciadoPrimario;
-            font-size: 0.7rem;
-            text-align: center;
-        }
-       
+        padding: 0.5rem;       
     }
 
     p.footer__copyright {
-        margin-right: 0.5rem;
-        padding-right: 0.5rem;
+        margin: 1rem 1.5rem 1rem 0;
+        padding: 0;
     }
 
     a.footer__icons {
         margin-bottom: 0;
+    }
+}
+@media(max-width:320px){
+    p.footer__copyright {
+        margin: 2rem auto;
+        
     }
 }

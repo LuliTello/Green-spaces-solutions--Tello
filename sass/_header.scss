@@ -18,6 +18,10 @@ a.nav-link {
         background-color: lighten($bgSecundario, 3%);
     }   
 }
+.nav-item:last-of-type{
+    border: 1px dotted $fuenteDark;
+    border-radius: 0.5rem;
+}
 
 /*h1 inicio*/
 .imagen__inicio {
@@ -52,6 +56,8 @@ a.nav-link {
         left: 10rem;
     }
 }
+
+/*mobile last medias*/
 @media(max-width: 768px) {
 
     .imagen__inicio h1 {
@@ -70,10 +76,7 @@ a.nav-link {
         }
     }
 
-    hr {
-        width: 25rem;
-        margin: 2rem auto;
-    }
+    
     .nav-link{
         color: $fuenteDark;
         text-align: center;
