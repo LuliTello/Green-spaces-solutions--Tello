@@ -34,7 +34,9 @@ h1.titulo__contacto {
 
 .form {
     background-color: $bgSecundario;
+    width: 45rem;
     border-radius: 2rem;
+    margin-left: 5rem;
     margin-top: 2rem;
     padding: 1rem;
 
@@ -148,6 +150,10 @@ label {
             top: 12rem;
         }
     }
+    .form{
+        width:100%;
+        margin: 0;
+    }
 }
 
 @media(max-width:576px) {
@@ -231,7 +237,7 @@ label {
     }
 
     textarea {
-        width: 17rem;
+        width: 100%;
     }
 }
 

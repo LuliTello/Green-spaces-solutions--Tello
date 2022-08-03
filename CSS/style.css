@@ -840,7 +840,9 @@ h1.titulo__contacto {
 
 .form {
   background-color: rgba(236, 181, 119, 0.8);
+  width: 45rem;
   border-radius: 2rem;
+  margin-left: 5rem;
   margin-top: 2rem;
   padding: 1rem; }
   .form__content {
@@ -913,7 +915,10 @@ label {
     0% {
       top: 1rem; }
     100% {
-      top: 12rem; } } }
+      top: 12rem; } }
+  .form {
+    width: 100%;
+    margin: 0; } }
 
 @media (max-width: 576px) {
   .titulo__contacto--img {
@@ -961,7 +966,7 @@ label {
     100% {
       top: 5rem; } }
   textarea {
-    width: 17rem; } }
+    width: 100%; } }
 
 @media (max-width: 320px) {
   h1.titulo__contacto {
