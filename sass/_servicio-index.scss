@@ -8,7 +8,7 @@
 .services__grid {
     @include grid(repeat(4, 1fr),1rem )
 }
-
+/*cards*/
 .card {
     background-color: $bgWhite;
     padding: 1.5rem;
@@ -45,6 +45,7 @@ a.card__link {
     font-size: larger;
     }
 }
+/*mobile last medias*/
 @media(max-width:992px){
     .services__grid {
         @include grid(repeat(2, 1fr), 1.5rem)

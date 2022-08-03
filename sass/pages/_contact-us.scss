@@ -1,3 +1,4 @@
+/*imagen y titulo*/
 .titulo__contacto {
     position: relative;
 
@@ -25,13 +26,13 @@ h1.titulo__contacto {
         top: 26rem;
     }
 }
-
+/*subtitulo*/
 .contacto__h2 {
     color: $fuenteBlue;
     font-size: 28px;
     text-decoration: underline;
 }
-
+/*formulario*/
 .form {
     background-color: $bgSecundario;
     width: 45rem;
@@ -103,7 +104,7 @@ label {
         }
     }
 }
-
+/*contacto*/
 .contact__contacto {
     margin: 3rem 1rem 0 3rem;
     padding-left: 3rem;
