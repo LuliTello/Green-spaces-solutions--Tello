@@ -913,7 +913,7 @@ label {
   padding-bottom: 1rem; }
 
 /*mobile last medias*/
-@media (max-width: 992px) {
+@media (max-width: 992px) and (max-width: landscape) {
   h1.titulo__contacto {
     left: 40rem; } }
 
